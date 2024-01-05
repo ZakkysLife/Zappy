@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Updates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="NavBar">
+        <div class="logo">
+            <!-- Your logo goes here -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="Updates.html">Updates</a></li>
+                <li><a href="About.html">About</a></li>
+
+                <!-- Add more links as needed -->
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="main-content">
+        <div class="updates-section">
+            <h2>Latest Updates</h2>
+
+            <!-- Separate lists for different types of updates -->
+            <ul class="update-list blue-list">
+                <li>New Game Uploaded</li>
+                <li>Zappys Lobby has been renamed to Lobby with a new icon; this was developed by Zak Vester</li>
+                
+                <!-- Add more updates as needed -->
+            </ul>
+
+            <ul class="update-list purple-list">
+                <li>Adding Zappy game center to the website</li>
+                <li>Coming Soon</li>
+                <li>Coming Soon</li>
+                <!-- Add more updates as needed -->
+            </ul>
+        </div>
+    </div>
+
+</body>
+
+<style>
+
+    body {
+        background: linear-gradient(#000, #4b0082); /* Black to purple gradient background */
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        margin: 0;
+    }
+
+    header.NavBar{
+        display: flex;
+        justify-content: center; /* Center the NavBar */
+        align-items: center;
+        padding: 10px; /* Smaller padding */
+        background-color: #000000; /* Adjust the background color as needed */
+        color: #fff; /* Adjust the text color as needed */
+        border-radius: 0px; /* Apply border-radius */
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+
+    }
+
+    .logo img {
+        width: 50px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+    }
+
+    nav li {
+        margin-right: 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .main-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 80px); /* Adjust the height considering the height of the NavBar */
+    }
+
+    .updates-section {
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+        padding: 20px;
+        border-radius: 12px;
+        width: 80%; /* Adjust the width as needed */
+        max-width: 800px; /* Set a maximum width for better readability */
+        overflow-y: auto; /* Enable vertical scrolling if content exceeds the height */
+    }
+
+    h2 {
+        color: #fff; /* Text color for updates section */
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .update-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .blue-list {
+        background-color: #0066cc; /* Blue background for the first list */
+    }
+
+    .purple-list {
+        background-color: #800080; /* Purple background for the second list */
+    }
+
+    .update-list li {
+        padding: 8px;
+        margin: 5px 0;
+        background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent white background for list items */
+        border-radius: 5px;
+    }
+
+    .update-list li:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Slightly darker background on hover */
+    }
+
+</style>
+</html>
